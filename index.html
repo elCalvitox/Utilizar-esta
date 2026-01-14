@@ -8,6 +8,8 @@
 
     <title>Document</title>
 
+    <script src="https://kit.fontawesome.com/09ad6cf311.js" crossorigin="anonymous"></script>
+
     <style>
 
         /* el color para movil se va a ver aquamarine */
@@ -18,12 +20,23 @@
 
         @media (min-width:768px) {
 
+            #contenedor-nuestros-servicios{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+
+            .servicio {
+                width: 30%;
+            }
+
                 body {
             background-color: lightpink;
-            background-image: url(/images/taller-movil.png);
             background-position: center center;
         }
 
+            header{display: flex;
+            justify-content: space-around;
         header{
             background-image: url(/images/taller-movil.png);
         }
@@ -58,6 +71,8 @@
                 body {
             background-color: red;
         }
+
+
 
         }
 
@@ -98,6 +113,32 @@
 
         #contenedor-quienes-somos p {
             font-size: 3em;
+        }
+
+        #nuestros-servicios {
+            background-color: white;
+        }
+
+        .servicio {
+            color: blue;
+            text-align: center;
+            border: 2px solid blue;
+            border-radius: 10px;
+            font-size: 4em;
+            padding: 10px;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+
+        .servicio:hover {
+            opacity: 0.5;
+        }
+
+        .titulo {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            padding: 10px;
         }
 
 
@@ -142,6 +183,73 @@
         </div>
 
     </section>
+
+
+
+    <section id="nuestros-servicios">
+
+        <h1 class="titulo">Nuestros servicios</h1>
+
+        <div id="contenedor-nuestros-servicios">
+
+            <div class="servicio">
+
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+
+            <p>Servicio tecnico</p>
+
+        </div>
+
+            <div class="servicio">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <p>Atencion telefonica</p>
+
+        </div>
+
+        </div>
+
+            <div class="servicio">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <p>Servicio a domicilio </p>
+
+        </div>
+
+            <div class="servicio">
+
+            <i class="fa-solid fa-car"></i>
+
+            <p>Vehiculo de sustitucion</p>
+
+        </div>
+
+            </div>
+
+            <div class="servicio">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>Informacion</p>
+
+        </div>
+
+            <div class="servicio">
+
+            <i class="fa-solid fa-circle-info"></i>
+
+            <p>Informacion</p>
+
+        </div>
+
+
+    </section>
+
+        </div>
+
+        
 
 <h1>OK</h1>
 
